@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>US energy information and administration visualization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style-assests/style.css" media="screen" title="no title">
+</head>
+
+<body>
+
+
+
+    <!-- <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-8 col-md-offset-2">
+                    <ul class="nav nav-tabs">
+
+                        <li id="singleSection" role="presentation" class="active"><a>Single Series Visualization</a></li>
+                        <li id="multipleScatterSection" role="presentation"><a>Scatter Series Visualization</a></li>
+                        <li id="multiSelectSection" role="presentation"><a>MulitSelect</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div> -->
+
+    <!-- start of single section -->
+    <!-- <div id="singleSeries">
+
+            <div class="row">
+
+                <div class="col-md-3 col-md-offset-3">
+                    <br>
+                    <p class="text-center">Locality Name</p>
+                    <select class="form-control" id="countryDropDown"></select>
+                </div>
+
+                <div class="col-md-3">
+                    <br>
+                    <p class="text-center">Energy Type</p>
+                    <select class="form-control" id="energyDropDown"></select>
+                </div>
+
+            </div> -->
+
+
+
+    <!-- <div class="row">
+                <div class="col-md-12 margin">
+                    <div class="col-md-6 col-md-offset-4">
+                        <ul class="nav nav-pills">
+
+                            <li id="barChart" role="presentation" class="active"><a>Bar chart</a></li>
+                            <li id="lineChart" role="presentation"><a>Line chart</a></li>
+                            <li id="scatterPlot" role="presentation"><a>Scatter plot</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+    <!-- end of container -->
+
+    <!-- single series start here -->
+
+    <!-- <div class="container">
+
+                <div class="col-md-12">
+                    <svg id="main" width="1140" height="400">
+      <text id='label' x='100' y='70'></text>
+    </svg>
+                </div>
+
+            </div>
+             single series end here
+
+        </div> -->
+    <!-- end of single section -->
+
+
+    <!-- multi series container start -->
+    <!-- <div id="multiSeries" class="container margin">
+
+            <div class="col-md-12">
+
+                <div class="col-md-3 col-md-offset-1">
+                    <p class="text-center">Locality Name 1</p>
+                    <select id="mulCountry1" class="form-control"></select>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Locality Name 2</p>
+                    <select id="mulCountry2" class="form-control"></select>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Energy Value</p>
+                    <select id="mulEnergy" class="form-control" name="">
+    </select>
+                </div>
+
+            </div> -->
+
+    <!-- <div class="row">
+                <div class="col-md-12 margin">
+                    <div class="col-md-6 col-md-offset-4">
+                        <ul class="nav nav-pills">
+
+                            <li id="multiBarChart" role="presentation" class="active"><a>Bar chart</a></li>
+                            <li id="multiLineChart" role="presentation"><a>Line chart</a></li>
+                            <li id="multiScatterPlot" role="presentation"><a>Scatter plot</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+
+    <!-- <div id="multiLineArea" class="col-md-12 margin">
+
+                <svg id="mainMultiple" width="960" height="300">
+  <text id='labelMultiple' x='70' y='12'></text>
+</svg>
+
+                <br>
+
+
+            </div> -->
+
+    <!-- </div> -->
+    <!-- multi-series container end -->
+
+    <!-- multi variable scatter plot container start -->
+
+    <!-- <div id="multiSeriesScatter" class="container margin">
+
+            <div class="col-md-12">
+
+                <div class="col-md-3 col-md-offset-1">
+                    <p class="text-center">Energy Value 1</p>
+                    <select id="scatterEnergy1" class="form-control" name="">
+    </select>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Energy Value 2</p>
+                    <select id="scatterEnergy2" class="form-control" name="">
+    </select>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Locality Name</p>
+                    <select id="scatterCountry1" class="form-control"></select>
+                </div>
+
+            </div> -->
+
+    <!-- <div class="col-md-12 margin"></div> -->
+
+    <!-- <div id="multiLineArea" class="col-md-12 margin">
+                <p class="text-center"></p> -->
+    <!-- <svg id="mainMultipleScatter" width="960" height="300">
+  <text id='labelScatterMul' x='70' y='12'></text>
+</svg> -->
+
+    <!-- <br>
+
+
+            </div> -->
+
+    <!-- </div> -->
+    <!-- multi variable scatter plot container end -->
+
+    <!-- <div class="col-md-12">
+            <div class="col-md-6 col-md-offset-5">
+                <ul class="nav nav-pills">
+                    <li role="presentation" class="active"><a href="design.html">Design Documentation</a></li>
+                </ul>
+            </div>
+        </div> -->
+
+    <!-- <div class="col-md-12 margin">
+
+        </div> -->
+
+    <!-- beginning of new trial code -->
+    <!-- <div id="multiSelectContainer" class="container margin">
+
+            <div class="col-md-12">
+                <div class="col-md-3 col-md-offset-1">
+                    <p class="text-center">Locality Name 1</p>
+                    <select id="multiSelectCountry" class="form-control"></select>
+                </div>
+                <div class="col-md-3">
+                    <p class="text-center">Energy Value</p>
+                    <select id="multiSelectEnergy" class="form-control"></select>
+                </div>
+            </div> -->
+
+    <!-- <div class="row">
+                <div class="col-md-12 margin">
+                    <div class="col-md-6 col-md-offset-4">
+                        <ul class="nav nav-pills">
+                            <li id="multiSelectBarChart" role="presentation" class="active"><a>Bar chart</a></li>
+                            <li id="multiSelectLineChart" role="presentation"><a>Line chart</a></li>
+                            <li id="multiSelectScatterChart" role="presentation"><a>Scatter plot</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin">
+                <h4 class="text-center text-muted">US Energy Information Administration Visualization</h4>
+            </div>
+        </div>
+
+        <div id="multiLineArea" class="col-md-12 margin">
+
+          <div class="col-md-12">
+              <div class="col-md-4">
+                  <p class="text-center">Locality Name</p>
+                  <select id="multiSelectCountry" class="form-control"></select>
+              </div>
+              <div class="col-md-4">
+                  <p class="text-center">Energy Value</p>
+                  <select id="multiSelectEnergy" class="form-control"></select>
+              </div>
+          </div>
+
+            <svg id="mainSelectMultiple" width="960" height="300">
+                </svg>
+
+        </div>
+
+    </div>
+    <!-- end of new trial code -->
+
+
+    <!-- end of main container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.12.0/d3-legend.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/4.1.2/papaparse.min.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="script-assests/multiselect.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style-assests/multiselect.css">
+    <script src="script-assests/script3.js" charset="utf-8"></script>
+
+</body>
+
+</html>

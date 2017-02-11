@@ -1,0 +1,97 @@
+/*div.bar {
+width: 100px;
+height: 50px;
+background: green;
+display: inline-block;
+/*color: white;*/
+/*border:1px solid black;
+margin-right:2px;
+}*/
+
+/******reda k style code*******/
+
+body
+{
+    /*color: #fff;*/
+    background: #222;
+}
+
+.full-width
+{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+.margin
+{
+    margin-top: 20px;
+}
+
+.no-radius
+{
+    border-radius: 0 !important;
+}
+
+#checkbox-chart
+{
+    overflow-y: auto;
+
+    width: 250px;
+    height: 200px;
+
+    border: 1px solid #e1e1e1;
+}
+
+ul li
+{
+    list-style-type: none;
+}
+
+text
+{
+    font-family: Arial;
+    font-size: 15px;
+}
+.axis path,
+.axis line
+{
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+.tick text
+{
+    font-size: 11px;
+
+    fill: black;
+}
+
+.tooltip
+{
+    position: absolute;
+
+    width: 200px;
+    height: 28px;
+
+    pointer-events: none;
+}
+
+.chart-line
+{
+    fill: none;
+    stroke: #06c;
+    stroke-width: 1px;
+}
+
+.color-legend
+{
+    font-size: 12px;
+}
+
+#multiLineArea
+{
+    padding: 2em;
+    border-radius: 1em;
+    background: #fff;
+}

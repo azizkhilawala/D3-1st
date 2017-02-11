@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen" title="no title">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style-assests/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 margin">
+                <div class="col-md-1"><a href="index.html"><span class="glyphicon glyphicon-circle-arrow-left" aria-hidden="true"></span></a></div>
+                <p class="lead text-center">Design Documentation</p>
+                <hr>
+            </div>
+
+            <div class="col-md-12">
+                <b><p>The Design Process</p></b>
+
+                <p>The data sets received from the US Energy Information Administration needed to be analyzed carefully before beginning with the implementation phase. Since, it was my first time working with such large datasets and using d3.js to visualize
+                    it, figuring out what data should be plotted where and how to visualize it needed to be given more thought.</p>
+
+
+                <p>The design process which I followed was to first understand the data variables and its relationship with other variables , then analyzing the data to check if there is any inconsistency in the datasets with any values being missing. After
+                    that, I began sketching a few ideas about how the bar chart, line chart and scatter plots would be placed and organized on the page. My thought process for this visualization was to keep the design as minimalistic as possible with
+                    relevant functional elements.</p>
+
+
+
+                <b><p>Sketches</p></b>
+
+                <div class="col-md-4"><img class="thumbnail" width="350" height="350" src="images/first-sketch.jpg" alt="inital sketch"></div>
+                <div class="col-md-4"><img class="thumbnail" width="350" height="350" src="images/second-sketch.jpg" alt="inital sketch"></div>
+                <div class="col-md-4"><img class="thumbnail" width="350" height="350" src="images/last-sketch.jpg" alt="inital sketch"></div>
+
+
+
+                <p>The idea I attempted in the beginning was to toggle single series charts on one section of the page with bar,line and scatter plots. The next idea to was add separate dynamic navigations to the top of the page so that user can select what
+                    kind of charts he/she wants to visualize be it single series or multi-series. I thought the second idea was fulfilling my minimalistic design view and then I thought of implementing it for this project.</p>
+
+                <b><p>Design Choice Rationale</p></b>
+
+                <p>While coding the visualizations in D3, a lot of time and thought was spent in building an efficient data structure that would then make plotting values on the screen a smooth process. I iterated the data structure and rebuild it for grouped
+                    line and bar charts. The single series visualization tab, since it was single series it was not that difficult to visualize, but for the multi-series visualization tab, the bar, line and scatter plots had to be grouped with respective
+                    year values so that the user could differentiate between two different regions, thus to organize it properly, the bars needed to arranged well with proper spacing and correct symmetry.</p>
+
+                <p>Since the data was sequential for the single series charts, the color I used was a soft blue hue. The soft blue is less stressful to the eyes especially on a white screen and helps the viewer understand patterns that emerge from the visualization.</p>
+
+                <p>For the multiple series charts, I made use of d3’s ordinal scales categorical colors which dynamically adds strong colors to the chart elements. Since it compares different regions, different hues had to be encoded in the visualization.</p>
+
+                <br>
+
+                <b><p>Visualization Insight</p></b>
+                <hr>
+
+                <div class="col-md-12">
+                    <div class="col-md-5">
+                        <img width="450" height="350" class="thumbnail img-responsive" src="images/africa-no-emission.png" alt="">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p>One strange factor I discovered while comparing Africa and Afghanistan’s C02 emissions, we found that Africa was emitting a constant amount of C02 gas consecutively each year from from 1980 onwards, but it did not produce any emissions
+                            for three consecutive years namely, 2004, 2005 and 2006. After that it risen again to its previous levels.</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-5">
+                        <img width="450" height="350" class="thumbnail img-responsive" src="images/india-electric.png" alt="">
+                    </div>
+
+                    <div class="col-md-7">
+                        <p>The second factor that I found strange is that India has been gradually increasing its total electricity generation each year as compared to Bangladesh which has a low increase and almost negligible in year 1980. This also proves
+                            how population increase, increases natural resource utilization.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <hr>
+
+        <b><p>Interactive Project Video</p></b>
+
+        <div class="col-md-7 col-md-offset-3 margin">
+            <object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/QJjUfDcLegw&hl=en&fs=1"></param><param name="allowFullScreen" value="true"></param><embed src="http://www.youtube.com/v/QJjUfDcLegw&hl=en&fs=1" type="application/x-shockwave-flash" allowfullscreen="true" width="425" height="344"></embed></object>
+        </div>
+
+        <br>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
